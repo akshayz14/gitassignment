@@ -3,11 +3,11 @@ package com.example.gitassignment.pagination
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.gitassignment.base.ApiResponse
+import com.example.gitassignment.base.SafeApiCall
 import com.example.gitassignment.domain.entity.GitResponseEntity
 import com.example.gitassignment.domain.entity.GitResponseEntityItem
 import com.example.gitassignment.model.GithubRequestModel
 import com.example.gitassignment.service.GitService
-import com.example.testingpokemon.base.SafeApiCall
 import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject

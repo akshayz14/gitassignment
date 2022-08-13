@@ -44,7 +44,6 @@ class GitListAdapter2 :
             oldItem: GitHubResponseModel,
             newItem: GitHubResponseModel
         ): Boolean {
-            // Id is unique.
             return oldItem.title == newItem.title
         }
 

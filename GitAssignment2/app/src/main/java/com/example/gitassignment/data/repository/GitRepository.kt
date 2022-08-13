@@ -7,12 +7,10 @@ import com.example.gitassignment.domain.entity.GitResponseEntityItem
 import com.example.gitassignment.model.GithubRequestModel
 import com.example.gitassignment.pagination.GitPagingSource
 import com.example.gitassignment.service.GitService
-import com.example.testingpokemon.base.SafeApiCall
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class GitRepository @Inject constructor(private val gitService: GitService) : Repository,
-    SafeApiCall {
+class GitRepository @Inject constructor(private val gitService: GitService) : Repository {
 
     companion object {
         private const val PAGING_SIZE = 20

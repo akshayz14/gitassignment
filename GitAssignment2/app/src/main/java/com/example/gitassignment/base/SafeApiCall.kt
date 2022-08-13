@@ -1,4 +1,4 @@
-package com.example.testingpokemon.base
+package com.example.gitassignment.base
 
 import com.example.gitassignment.base.ApiResponse
 import retrofit2.HttpException

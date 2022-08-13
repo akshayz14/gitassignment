@@ -57,8 +57,6 @@ class GitPullsFragment : Fragment() {
         collectUiState()
 
         gitListAdapter!!.addLoadStateListener {
-            // show a retry button outside the list when refresh hits an error
-            binding.notFoundTV.isVisible = it.refresh is LoadState.Error
             binding.progressbar.isVisible = it.refresh is LoadState.Loading
         }
     }
