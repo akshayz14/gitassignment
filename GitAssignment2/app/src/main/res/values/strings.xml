@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GitAssignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="github">Github</string>
+    <string name="enter_user_id">Enter User ID</string>
+    <string name="user_id">User ID</string>
+    <string name="enter_repo_name">Enter Repository Name</string>
+    <string name="closed_pulls">Closed Requests</string>
+    <string name="search">Search</string>
+    <string name="welcome_text">Enter a username and corresponding repository name to search for closed pull requests.</string>
+    <string name="error_msg"><![CDATA[Check whether you have entered correct username & repository name and try again.]]></string>
+    <string name="check_internet_msg">Check your internet connection and try again.</string>
+    <string name="not_found">Repository not found try again</string>
+</resources>

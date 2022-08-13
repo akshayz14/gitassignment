@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.EnterUserAndRepoFragment">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hTGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vLGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/hBGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vRGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+
+        <TextView
+            android:id="@+id/welcomeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome_text"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/vRGuideline"
+            app:layout_constraintStart_toEndOf="@id/vLGuideline"
+            app:layout_constraintTop_toBottomOf="@id/hTGuideline" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userTIL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/enter_user_id"
+            android:textColorHint="#575252"
+            android:textSize="16sp"
+            style="@style/MyFloatLayout"
+            app:hintTextColor="#457985"
+            app:layout_constraintEnd_toStartOf="@id/vRGuideline"
+            app:layout_constraintStart_toEndOf="@id/vLGuideline"
+            app:layout_constraintTop_toBottomOf="@id/welcomeTV"
+            app:lineHeight="24sp">
+
+            <EditText
+                android:id="@+id/userET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/repoTIL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/MyFloatLayout"
+            android:layout_marginTop="20dp"
+            android:hint="@string/enter_repo_name"
+            android:textColorHint="#575252"
+            android:textSize="16sp"
+            app:hintTextColor="#457985"
+            app:layout_constraintEnd_toStartOf="@id/vRGuideline"
+            app:layout_constraintStart_toEndOf="@id/vLGuideline"
+            app:layout_constraintTop_toBottomOf="@id/userTIL"
+            app:lineHeight="32sp">
+
+            <EditText
+                android:id="@+id/repoET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="8dp"
+                android:textColor="#1a181e"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/findPullsBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@id/hBGuideline"
+            app:layout_constraintEnd_toStartOf="@id/vRGuideline"
+            app:layout_constraintStart_toEndOf="@id/vLGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/repoTIL" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

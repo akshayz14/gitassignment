@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="2.5dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/hTGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vLGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/hBGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/vRGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <ImageView
+                android:id="@+id/userIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintStart_toEndOf="@id/vLGuideline"
+                app:layout_constraintTop_toBottomOf="@id/hTGuideline" />
+
+
+            <TextView
+                android:id="@+id/titleHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Title : "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toEndOf="@id/userIV"
+                app:layout_constraintTop_toBottomOf="@id/hTGuideline" />
+
+            <TextView
+                android:id="@+id/titleDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Description "
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toStartOf="@id/titleHeadingTV"
+                app:layout_constraintTop_toBottomOf="@id/titleHeadingTV" />
+
+            <TextView
+                android:id="@+id/createdDateHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Created on: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toEndOf="@id/vLGuideline"
+                app:layout_constraintTop_toBottomOf="@id/userIV" />
+
+            <TextView
+                android:id="@+id/createdDateDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Description "
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toStartOf="@id/createdDateHeadingTV"
+                app:layout_constraintTop_toBottomOf="@id/createdDateHeadingTV" />
+
+            <TextView
+                android:id="@+id/closedDateHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Closed Date : "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toEndOf="@id/vLGuideline"
+                app:layout_constraintTop_toBottomOf="@id/createdDateDescriptionTV" />
+
+            <TextView
+                android:id="@+id/closedDateDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Description "
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toStartOf="@id/closedDateHeadingTV"
+                app:layout_constraintTop_toBottomOf="@id/closedDateHeadingTV" />
+
+
+            <TextView
+                android:id="@+id/userHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="User : "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toEndOf="@id/vLGuideline"
+                app:layout_constraintTop_toBottomOf="@id/closedDateDescriptionTV" />
+
+            <TextView
+                android:id="@+id/userDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="Description "
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@id/hBGuideline"
+                app:layout_constraintEnd_toEndOf="@id/vRGuideline"
+                app:layout_constraintStart_toStartOf="@id/userHeadingTV"
+                app:layout_constraintTop_toBottomOf="@id/userHeadingTV" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

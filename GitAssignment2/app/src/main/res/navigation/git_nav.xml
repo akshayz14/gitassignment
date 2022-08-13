@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/git_nav"
+    app:startDestination="@id/enterUserAndRepoFragment">
+
+    <fragment
+        android:id="@+id/enterUserAndRepoFragment"
+        android:name="com.example.gitassignment.ui.EnterUserAndRepoFragment"
+        android:label="@string/github"
+        tools:layout="@layout/fragment_enter_user_and_repo" >
+        <action
+            android:id="@+id/action_enterUserAndRepoFragment_to_gitPullsFragment"
+            app:destination="@id/gitPullsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gitPullsFragment"
+        android:name="com.example.gitassignment.ui.GitPullsFragment"
+        android:label="@string/closed_pulls"
+        tools:layout="@layout/fragment_git_pulls" />
+
+</navigation>
