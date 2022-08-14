@@ -50,8 +50,8 @@ class EnterUserAndRepoFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        binding.userET.setText("")
-        binding.repoET.setText("")
+        binding.userET.setText("kotlin")
+        binding.repoET.setText("kotlinx.coroutines")
     }
 
     private fun openGitPullsFragment() {
